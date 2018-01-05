@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingBottom="5dp"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp"
+    android:paddingTop="5dp"
+    tools:context="com.project.pp.parentparadise.lin.ActVipInfoActivity">
+    <LinearLayout
+        android:id="@+id/llTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/tvListTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="已報名"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <ImageView
+            android:id="@+id/ivActivitiesImage"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/lin_test01"
+            android:layout_gravity="center_vertical"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvTitle"
+                android:layout_width="230dp"
+                android:layout_height="60dp"
+                android:text="2018 小騎士馬術冬令營 - 小牛仔也很忙！"
+                android:textSize="16sp" />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <Button
+                    android:id="@+id/btLike"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:text="讚"/>
+                <TextView
+                    android:id="@+id/tvLike"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="10"/>
+                <Button
+                    android:id="@+id/btWatch"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:text="心"/>
+                <TextView
+                    android:id="@+id/tvWatch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="20"/>
+                <Button
+                    android:id="@+id/btMsg"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:text="言"/>
+                <TextView
+                    android:id="@+id/tvMsg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="30"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btRegister"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:onClick="clickRegister"
+                android:text="報名" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="#ecd283">
+    <LinearLayout
+        android:id="@+id/llActMain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="6dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:text="文章分類：" />
+        <Spinner
+            android:id="@+id/spClassify1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:dropDownWidth="wrap_content"
+            android:layout_weight="1"
+            android:entries="@array/main_classify_array"
+            android:textAlignment="center" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llActSub"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="6dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:text="次分類：" />
+        <Spinner
+            android:id="@+id/spClassify2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:dropDownWidth="wrap_content"
+            android:layout_weight="1"
+            android:entries="@array/sub_classify_array"
+            android:textAlignment="center" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llBookData"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="6dp">
+        <TextView
+            android:text="ISBN："
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_gravity="center"/>
+        <EditText
+            android:id="@+id/etAddIsbn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="3"
+            android:singleLine="false"
+            android:hint="請手動輸入國際書碼  或  掃描條碼"
+            android:textSize="12sp"/>
+        <Button
+            android:id="@+id/btScan"
+            android:onClick="OnScanClick"
+            android:layout_width="50dp"
+            android:layout_height="45dp"
+            android:layout_gravity="center"
+            android:background="@drawable/amber_style_bottom"
+            android:text="掃描條碼 / QRcode"
+            android:textSize="10sp"/>
+    </LinearLayout>
+
+</LinearLayout>
+    <ScrollView
+        android:id="@+id/svAddArticle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recyclerView_article"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_margin="6dp">
+                </android.support.v7.widget.RecyclerView>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <Button
+                    android:id="@+id/btTake"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/amber_style_bottom"
+                    android:text="相機拍照"
+                    android:textSize="10sp"/>
+                <Button
+                    android:id="@+id/btPick"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:background="@drawable/amber_style_bottom"
+                    android:text="選取照片"
+                    android:textSize="10sp"/>
+                <Button
+                    android:id="@+id/btSubmit"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="5dp"
+                    android:background="@drawable/amber_style_bottom"
+                    android:text="傳送分享文"
+                    android:textSize="10sp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="6dp"
+                android:layout_marginRight="6dp"
+                android:orientation="vertical">
+                <EditText
+                    android:id="@+id/etDescribe"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="請輸入分享內容...."
+                    android:textSize="12sp"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

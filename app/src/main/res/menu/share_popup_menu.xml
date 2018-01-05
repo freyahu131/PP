@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <item
+        android:id="@+id/pmOutdoor"
+        android:title="戶外活動"
+        android:icon="@drawable/amber_icon_outdoor"
+        app:showAsAction="ifRoom"/>
+    <item
+        android:id="@+id/pmExperience"
+        android:title="親子體驗"
+        android:icon="@drawable/amber_icon_exp"
+        app:showAsAction="ifRoom"/>
+    <item
+        android:id="@+id/pmTheme"
+        android:title="主題活動"
+        android:icon="@drawable/amber_icon_theme"
+        app:showAsAction="ifRoom"/>
+    <item
+        android:id="@+id/pmOther"
+        android:title="其他"
+        android:icon="@drawable/amber_icon_other"
+        app:showAsAction="ifRoom"/>
+
+</menu>

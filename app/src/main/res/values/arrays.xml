@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="main_classify_array">
+        <item>請選擇</item>
+        <item>甜蜜家庭</item>
+        <item>親子活動</item>
+        <item>閱讀</item>
+        <item>影音</item>
+        <item>生活</item>
+    </string-array>
+
+    <string-array name="sub_classify_array">
+        <item>請選擇</item>
+        <item>戶外活動</item>
+        <item>親子體驗</item>
+        <item>主題活動</item>
+        <item>其他</item>
+    </string-array>
+
+</resources>

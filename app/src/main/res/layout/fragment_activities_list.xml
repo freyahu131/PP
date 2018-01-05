@@ -1,0 +1,87 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.project.pp.parentparadise.lin.ActListFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <Button
+                    android:id="@+id/btOutdoor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="戶外活動"/>
+                <Button
+                    android:id="@+id/btExperience"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="親子體驗"/>
+                <Button
+                    android:id="@+id/btTheme"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="主題活動"/>
+                <Button
+                    android:id="@+id/btGame"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="親子遊戲"/>
+
+                <Button
+                    android:id="@+id/btSearch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:text="搜尋" />
+            </LinearLayout>
+    </HorizontalScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="15dp"
+        android:paddingBottom="10dp">
+        <TextView
+            android:id="@+id/tvRecommendTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="  推薦"
+            android:textSize="18sp"/>
+    </LinearLayout>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="15dp"
+        android:paddingBottom="10dp">
+        <TextView
+            android:id="@+id/tvSecondTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="  戶外活動"
+            android:textSize="18sp"/>
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/lvList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </ListView>
+
+
+
+
+</LinearLayout>
